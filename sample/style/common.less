@@ -1,0 +1,50 @@
+
+
+body {
+    margin: 0;
+    padding: 0 40px;
+    font: 100%/1.5 Georgia, serif;
+}
+
+.placeholder {
+    position: relative;
+    height: 200px;
+    background: #000;
+
+    &:before {
+        counter-increment: section;
+        content: counter(section);
+        position: absolute;
+        top: 0.25em;
+        left: 0.25em;
+        width: 1.5em;
+        height: 1.5em;
+        border: 2px solid #fff;
+        border-radius: 2em;
+        color: #fff;
+        background: transparent;
+        text-align: center;
+        font: 1.2em/1.4 Arial, sans-serif;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.debug {
+    background: #090;
+}
+
+.info {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+kbd {
+    border: 1px solid #999;
+    border-radius: 0.3em;
+    box-shadow: inset -1px -1px 1px #eee;
+    padding: 0.1em 0.4em;
+    color: #fff;
+    background: #000;
+}

@@ -1,0 +1,30 @@
+@import "../../distribution/grid";
+@import "../../library/clearfix";
+@import "common";
+
+.page {
+    margin: 0 auto;
+    max-width: 35em;
+}
+
+.grid-context {
+    counter-reset: section;
+
+    > * {
+        margin-bottom: 1.5em;
+    }
+}
+
+.debug {
+    .page {
+        background: #f00;
+
+        .grid-context {
+            > * {
+                background: #ff0;
+            }
+        }
+    }
+}
+
+@import "parent-grid";

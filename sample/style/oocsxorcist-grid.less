@@ -1,0 +1,43 @@
+@import "../../distribution/grid";
+
+@grid-context: main;
+
+//noinspection LessUnresolvedMixin
+.grid(
+    @min-width: 60em;
+    @context-selector: @grid-context;
+    @layout: {
+        article {
+            .column(5, 9);
+        }
+
+        aside {
+            .column(10, 12);
+        }
+
+        nav {
+            .column(1, 4);
+        }
+    }
+);
+
+//noinspection LessUnresolvedMixin
+.grid(
+    @max-width: 59.99em;
+    @min-width: 30em;
+    @context-selector: @grid-context;
+    @layout: {
+        article {
+            .column(1, 12);
+        }
+
+        aside {
+            clear: left;
+            .column(7, 12);
+        }
+
+        nav {
+            .column(1, 6);
+        }
+    }
+);
