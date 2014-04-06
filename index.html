@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="True-grid : A gritty &#39;isolation&#39; float Less mixin for CSS hipsters who sport a mustache or eye patch." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>True-grid</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ebednarz/true-grid">View on GitHub</a>
+
+          <h1 id="project_title">True-grid</h1>
+          <h2 id="project_tagline">A gritty &#39;isolation&#39; float Less mixin for CSS hipsters who sport a mustache or eye patch.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ebednarz/true-grid/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ebednarz/true-grid/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="true-grid" class="anchor" href="#true-grid"><span class="octicon octicon-link"></span></a>True grid</h1>
+
+<blockquote>
+<p>A gritty <a href="http://palantir.net/blog/responsive-design-s-dirty-little-secret">'isolation' float</a>
+<a href="http://lesscss.org/">Less</a> mixin for CSS hipsters who sport a mustache or
+eye patch.</p>
+</blockquote>
+
+<h2>
+<a name="yep" class="anchor" href="#yep"><span class="octicon octicon-link"></span></a>Yep</h2>
+
+<ul>
+<li>Mobile First</li>
+<li>Progressive Enhancement</li>
+<li>Responsive Web Design</li>
+<li>Semantic Grid</li>
+<li><a href="http://en.wikipedia.org/wiki/You_aren't_gonna_need_it">YAGNI</a></li>
+</ul><h2>
+<a name="nope" class="anchor" href="#nope"><span class="octicon octicon-link"></span></a>Nope</h2>
+
+<ul>
+<li>IE &lt; 9 pretty-printing</li>
+<li>Pixel perfect percentage rounding (especially in Safari)</li>
+<li>Nested columns</li>
+</ul><h2>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>API</h2>
+
+<p>The API consists of a single global <code>.grid</code> mixin function with the following
+parameters:</p>
+
+<ul>
+<li>
+<code>@min-width</code>: CSS media query length</li>
+<li>
+<code>@max-width</code>: CSS media query length (optional)</li>
+<li>
+<code>@columns</code> integer (optional, default: 12)</li>
+<li>
+<code>@gutter</code>: CSS length (optional, default: 1.5em)</li>
+<li>
+<code>@context-selector</code>: (optional, default: '.grid-context';)</li>
+<li>
+<code>@column-selector</code>: (optional, default: '&gt; *';)</li>
+<li>
+<code>@parent-selector</code>: (optional)</li>
+<li>
+<code>@layout</code>: CSS rule sets<br>
+Provides a local <code>.column</code> mixin function with the following parameters:
+
+<ul>
+<li>
+<code>@from</code> integer</li>
+<li>
+<code>@to</code> integer (optional, default: <code>@from</code>)</li>
+</ul>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">True-grid maintained by <a href="https://github.com/ebednarz">ebednarz</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
