@@ -1,0 +1,109 @@
+@import "distribution/grid";
+
+@grid-context: ~'.foo';
+@grid-column: ~'.bar';
+@grid-parent: ~'.quux';
+
+//noinspection LessUnresolvedMixin
+.grid(
+    @min-width: 60em;
+    @columns: 16;
+    @gutter: 15px;
+    @context-selector: @grid-context;
+    @column-selector: @grid-column;
+    @parent-selector: @grid-parent;
+    @layout: {
+        .quux {
+            max-width: 68em;
+            margin: 0 auto;
+        }
+
+        .left-sidebar-1 {
+            .column(1, 2);
+        }
+
+        .left-sidebar-2 {
+            .column(3, 5);
+        }
+
+        .content {
+            .column(6, 11);
+        }
+
+        .right-sidebar-1 {
+            .column(12, 14);
+        }
+
+        .right-sidebar-2 {
+            .column(15, 16);
+        }
+    }
+);
+
+//noinspection LessUnresolvedMixin
+.grid(
+    @min-width: 45em;
+    @max-width: 59.99em;
+    @columns: 3;
+    @gutter: 1em;
+    @context-selector: @grid-context;
+    @column-selector: @grid-column;
+    @parent-selector: @grid-parent;
+    @layout: {
+        .content {
+            .column(1, 3);
+        }
+
+        .left-sidebar-1 {
+            clear: left;
+            .column(3);
+        }
+
+        .left-sidebar-2 {
+            .column(2);
+        }
+
+        .right-sidebar-1 {
+            .column(1);
+        }
+
+        .right-sidebar-2 {
+            clear: left;
+            .column(1, 3);
+        }
+    }
+);
+
+//noinspection LessUnresolvedMixin
+.grid(
+    @min-width: 25em;
+    @max-width: 44.99em;
+    @columns: 2;
+    @gutter: 0.5em;
+    @context-selector: @grid-context;
+    @column-selector: @grid-column;
+    @parent-selector: @grid-parent;
+    @layout: {
+        .content {
+            .column(1, 2);
+        }
+
+        .left-sidebar-1 {
+            clear: left;
+            .column(1);
+        }
+
+        .left-sidebar-2 {
+            .column(2);
+        }
+
+        .right-sidebar-1 {
+            clear: left;
+            .column(2);
+        }
+
+        .right-sidebar-2 {
+            .column(1);
+        }
+    }
+);

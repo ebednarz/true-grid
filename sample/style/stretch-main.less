@@ -1,0 +1,34 @@
+@import "distribution/grid";
+@import "library/clearfix";
+@import "common";
+
+body {
+    padding: 0;
+}
+
+.page {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.grid-context {
+    counter-reset: section;
+
+    > * {
+        margin-bottom: 1.5em;
+    }
+}
+
+.debug {
+    .page {
+        background: #f00;
+
+        .grid-context {
+            > * {
+                background: #ff0;
+            }
+        }
+    }
+}
+
+@import "stretch-grid";

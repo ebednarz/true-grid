@@ -1,0 +1,28 @@
+@import "common";
+
+.quux {
+    margin: 0 auto;
+    max-width: 32em;
+}
+
+.foo {
+    counter-reset: section;
+
+    .bar {
+        margin-bottom: 1.5em;
+    }
+}
+
+.debug {
+    .quux {
+        background: #f00;
+    }
+
+    .foo {
+        .bar {
+            background: #ff0;
+        }
+    }
+}
+
+@import "verbose-grid";
