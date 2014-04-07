@@ -57,7 +57,7 @@ parameters:
     );
 
 For more code examples, see the
-[*-grid.less](https://github.com/ebednarz/true-grid/tree/gh-pages/)
+[*-grid.less](https://github.com/ebednarz/true-grid/tree/gh-pages/sample/style)
 files in the
 [`gh-pages` branch](https://github.com/ebednarz/true-grid/tree/gh-pages/).
 
