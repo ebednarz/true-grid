@@ -37,7 +37,31 @@ parameters:
     - `@from` integer
     - `@to` integer (optional, default: `@from`)
 
-## Examples
+### Example
+
+    .grid(
+        @min-width: 40em;
+        @layout: {
+            article {
+                .column(5, 9);
+            }
+
+            aside {
+                .column(10, 12);
+            }
+
+            nav {
+                .column(1, 4);
+            }
+        }
+    );
+
+For more code examples, see the
+[*-grid.less](https://github.com/ebednarz/true-grid/tree/gh-pages/)
+files in the
+[`gh-pages` branch](https://github.com/ebednarz/true-grid/tree/gh-pages/).
+
+## Demos
 
 [http://ebednarz.github.io/true-grid](http://ebednarz.github.io/true-grid)
 
