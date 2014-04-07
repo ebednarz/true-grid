@@ -1,8 +1,8 @@
 # True grid
 
 > A gritty ['isolation' float](http://palantir.net/blog/responsive-design-s-dirty-little-secret)
-[Less](http://lesscss.org/) mixin for CSS hipsters who sport a mustache or
-eye patch.
+[Less](http://lesscss.org/) mixin for CSS hipsters who sport
+[a mustache or eye patch](http://en.wikipedia.org/wiki/True_Grit_(1969_film)#Differences_from_the_novel).
 
 ## Yep
 
