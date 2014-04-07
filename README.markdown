@@ -35,6 +35,10 @@ parameters:
     - `@from` integer
     - `@to` integer (optional, default: `@from`)
 
+## Examples
+
+[http://ebednarz.github.io/true-grid](http://ebednarz.github.io/true-grid)
+
 ## License
 
 MIT
