@@ -25,10 +25,10 @@ parameters:
 
 - `@min-width`: CSS media query length
 - `@max-width`: CSS media query length (optional)
-- `@columns` integer (optional, default: 12)
-- `@gutter`: CSS length (optional, default: 1.5em)
-- `@context-selector`: (optional, default: '.grid-context';)
-- `@column-selector`: (optional, default: '> *';)
+- `@columns` integer (optional, default: `12`)
+- `@gutter`: CSS length (optional, default: `1.5em`)
+- `@context-selector`: (optional, default: `.grid-context`;)
+- `@column-selector`: (optional, default: `> *`;)
 - `@parent-selector`: (optional)
 - `@layout`: CSS rule sets<br>
    Provides a local `.column` mixin function with the following parameters:
